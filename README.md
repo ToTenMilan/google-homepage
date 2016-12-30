@@ -1,0 +1,1 @@
+Workspace for my own projects made with The Odin Project
