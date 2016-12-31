@@ -3,6 +3,8 @@ html {
    -moz-appearance:    none;
    /*appearance:         none;*/
    font-family: arial, sans-serif;
+   height: 100%;
+   overflow-y: scroll;
    
 }
 .hover:hover {
@@ -33,15 +35,16 @@ nav {
     padding-top: 10px;
     font-size: 13px;
 }
+
 #login {
     background-color: #296CF0;
-    background-size: 100px 40px;
+    background-size: 90px 40px;
     border: none;
     color: #fff;
-    padding: 9px 12px;
+    padding: 7px 12px;
     /*font-weight: 500;*/
     border-radius: 3px;
-    font-weight: 900;
+    font-weight: 600;
 }
 #login:hover {
     box-shadow: 2px 2px; 
@@ -109,14 +112,17 @@ footer {
     /*display: block;*/
     position: fixed;
     bottom: 0;
-    width: 100%;
-    
+    left: 0;
     height: 40px;
-    background-color: #EFEFEF;
+}
+.grey_box {
+    background-color: #FAFAFA;
     color: #D1D1D1;
-    min-width: 560px;
+    width: 100%;
     border: solid 1px #d1d1d1;
-    
+    min-width: 560px;
+    /*position: relative;*/
+    /*left: 0;*/
 }
 #footer_left {
     float: left;
@@ -145,4 +151,158 @@ footer {
     color: #6B6B6B;
     right: 0;
     font-size: 13px;
+}
+
+/*
+ * search page
+ */
+
+#nav_search {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 120px;
+    width: 100%;
+}
+#search_bar_search_page {
+    display: inline;
+    width: 80%;
+    float: left;
+}
+
+#search_box_search_page {
+    display: block;
+    margin: auto;
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(97,97,97,0.65);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(97,97,97,0.65);
+    padding-top: 20px;
+    margin-top: 20px;
+    box-shadow: 1px 1px #E4E4E4;
+    width: 630px;
+    height: 45px;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    position: fixed;
+    left: 150px;
+}
+.header_link_search {
+    color: black;
+    /*float: right;*/
+    /*display: inline;*/
+    padding: 4px;
+    padding-top: 10px;
+    font-size: 13px;
+    
+}
+#right_buttons_search_page {
+    display: inline;
+    width: 20%;
+    float: right;
+    display:flex;    
+    align-items: center;
+    height: 80px;
+}
+#search_filters {
+    position: fixed;
+    left: 150px;
+    top: 65px;
+    height: 55px;
+    display:flex;    
+    align-items: center;
+}
+.search_filter_link {
+    color: #6B6B6B;
+    font-size: 13px;
+    padding: 15px 9px;
+    height: 55px;
+    border: solid 5px transparent;
+    font-weight: 400;
+}
+.search_filter_link:active {
+    color: blue;
+}
+.search_filter_link:hover {
+    color: black;
+}
+#search_results_sum {
+    display: block;
+    position: fixed;
+    top: 120px;
+    left: 150px;
+    color: #6B6B6B;
+    font-size: 13px;
+    padding-left: 14px;
+    height: 20px;
+}
+#search_results {
+    display: block;
+    position: fixed;
+    left: 150px;
+    top: 140px;
+    padding-top: 10px;
+}
+.search_result {
+    margin: 26px 0;
+}
+.search_result_link {
+    padding: 2px;
+    padding-left: 14px;
+    color: blue;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0px;
+    width: 600px;
+}
+.search_result_address {
+    padding: 1px;
+    padding-left: 14px;
+    color: green;
+    font-weight: 300;
+    font-size: 13px;
+    margin: 0px;
+    width: 600px;
+}
+.search_result_description {
+    padding: 1px;
+    padding-left: 14px;
+    color: #6B6B6B;
+    font-weight: 300;
+    font-size: 13px;
+    margin: 0px;
+    width: 600px;
+}
+.footer_container_search_page {
+    height: 80px;
+}
+#footer_search_page {
+    float: left;
+    width: 50%;
+    display: flex;    
+    align-items: center;
+    padding-left: 150px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 40px;
+}
+#localization_links_container {
+    height: 40px;
+    position: fixed;
+    bottom: 40px;
+    left: 150px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+}
+.localization_description {
+    padding: 0 1px;
+    margin: 1px;
+    color: #c1c1c1;
+    font-size: 12px;
+}
+.localization_links {
+    padding: 0 1px;
+    margin: 1px;
+    color: #6B6B6B;
 }
